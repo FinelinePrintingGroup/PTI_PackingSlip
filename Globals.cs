@@ -24,7 +24,11 @@ namespace PTI_Integration_Console
         private static string logicConnString = "Data Source=SQL1;Initial Catalog=pLogic;User ID=FPGwebservice;Password=kissmygrits";
         
         private static string printableConnString = "Data Source=SQL1;Initial Catalog=printable;User ID=FPGwebservice;Password=kissmygrits";
-        
+
+        private static string devPrintableConnString = "Data Source=SQL1; Initial Catalog=devPrintable; User ID=FPGwebservice; Password=kissmygrits";
+
+        private static string devLogicConnString = "Data Source=SQL1;Initial Catalog=devLogic;User ID=FPGwebservice;Password=kissmygrits";
+
         //private static string logicConnString = "Data Source=PLM;Initial Catalog=devLogic;User ID=FPGwebservice;Password=kissmygrits";
         
         //private static string printableConnString = "Data Source=PLM;Initial Catalog=printable;User ID=FPGwebservice;Password=kissmygrits";
@@ -40,6 +44,16 @@ namespace PTI_Integration_Console
         public static string get_printableConnString
         {
             get { return Globals.printableConnString; }
+        }
+
+        public static string get_DEV_logicConnString
+        {
+            get { return Globals.devLogicConnString; }
+        }
+
+        public static string get_DEV_printable
+        {
+            get { return Globals.devPrintableConnString; }
         }
 
         public static Uri get_printableURI_packingSlip

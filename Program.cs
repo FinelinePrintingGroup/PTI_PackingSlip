@@ -34,15 +34,15 @@ namespace PTI_Integration_Console
             al = me.getShipmentItemsForProcessing();
 
             //Remove id's for non-finalshipyn items
-            foreach (object[] row in al)
+            foreach (int row in al)
             {
-                shipInfo = me.getShipmentInfo(Convert.ToInt32(row[0].ToString()));
+                shipInfo = me.getShipmentInfo(row);
 
                 test = me.checkFinalShipyn(Convert.ToInt32(shipInfo[0].ToString()), Convert.ToInt32(shipInfo[1].ToString()));
 
                 if (!test)
                 {
-                    al.Remove(row[0].ToString());
+                    al.Remove(row.ToString());
                 }
             }
 

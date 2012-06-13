@@ -752,8 +752,6 @@ namespace PTI_Integration_Console
         //}
         #endregion
 
-
-
         public void respCreatePackingSlipByOrder(XmlDocument pDoc)
         {
             XmlDocument doc = pDoc;
@@ -859,8 +857,6 @@ namespace PTI_Integration_Console
         //}
         #endregion
 
-
-
         public XmlDocument sendXmlRequest(XmlDocument pDoc)
         {
             XmlDocument docResp = null;
@@ -963,8 +959,6 @@ namespace PTI_Integration_Console
                 Console.WriteLine(e.ToString());
             }
         }
-
-
 
         public void responseError(string pErrNum, string pErr, string pErrDesc, string pPrintableID, string pPackingSlip)
         {
